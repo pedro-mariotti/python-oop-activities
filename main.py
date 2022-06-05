@@ -1,9 +1,18 @@
-from enfermeiro import Chefe, Tecnico
-from medico import Interno, Titular, Cirurgiao, MedicoClinico, Residente
-from gerente import Gerente
-from atendente import Recepcionista, Seguranca
-from consultor import ConsultTecnologico, ConsultFinanceiro, ConsultJuridico
-from suporte import Zelador, Entregador, Farmaceutico
+from funcionario.atendente.atendente_children.Recepcionista import Recepcionista
+from funcionario.atendente.atendente_children.Seguranca import Seguranca 
+from funcionario.consultor.consultor_children.ConsultFinanceiro import ConsultFinanceiro 
+from funcionario.consultor.consultor_children.ConsultJuridico import ConsultJuridico 
+from funcionario.consultor.consultor_children.ConsultTecnologico import ConsultTecnologico 
+from funcionario.enfermeiro.enfermeiro_children.Chefe import Chefe 
+from funcionario.enfermeiro.enfermeiro_children.Tecnico import Tecnico 
+from funcionario.medico.medico_children.Interno import Interno 
+from funcionario.medico.medico_children.Titular import Titular 
+from funcionario.medico.medico_children.titular_children.Cirurgiao import Cirurgiao 
+from funcionario.medico.medico_children.titular_children.MedicoClinico import MedicoClinico 
+from funcionario.medico.medico_children.titular_children.Residente import Residente 
+from funcionario.Gerente import Gerente
+
+
 import random
 import datetime
 
