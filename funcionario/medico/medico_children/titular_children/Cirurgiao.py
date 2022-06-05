@@ -42,8 +42,8 @@ class Cirurgiao(Titular):
     try:
       # utiliza o método da superclasse para cadastrar dados gerais, para depois cadastrar dados especificos
       self.__inicioDeCarreira = data["inicioDeCarreira"]
-      self.__equipeMedica = data["equipeMedica"]
-      super().cadastroTitular(data)
+      self.__equipeCirurgica = data["equipeCirurgica"]
+      super().reCadastroTitular(data)
     except:
       print("Dados de cadastro de Cirurgião incompletos, favor preenchê-los integralmente")
     else:

@@ -213,21 +213,11 @@ elif selecionar == 2:
     "areaAtuacao": "Residência",
     "supervisor": house
   }
-  fichaMedClinico = {
-    "nome": "Melissa",
-    "idade": 22, 
-    "sexo": "Mulher",
-    "id": random.randint(51,75),
-    "emAtendimento": False,
-    "areaAtuacao":"Clinico",
-    "especialidade": "Oftalmologia",
-    "crm": "0532",
-    "enderecoClinica": "Rua 12"
-  }
-  clinica = MedicoClinico(fichaMedClinico)
+  house.reCadastroTitular(fichaRecadastro)
 
-  print("{} é especialista em {}, seu crm é {}, com uma clinica localizada na {}\n".format(clinica.getNome(), clinica.getEspecialidade(), clinica.getCrm(), clinica.getEndereco()))
+  clinico = MedicoClinico(fichaClinico)
 
+  print("{} é especialista em {}, seu crm é {}, com uma clinica localizada na {}\n".format(clinico.getNome(), clinico.getEspecialidade(), clinico.getCrm(), clinico.getEndereco()))
   
 elif selecionar == 3:
   consultor = {
